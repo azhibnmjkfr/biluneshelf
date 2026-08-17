@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>BiluneShelf — Digital Library Hub</title>
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- BRAND HEADER -->
+    <header class="brand-header">
+        <h1 class="brand-title">BiluneShelf</h1>
+        <p class="brand-subtitle">Curated Digital Collection</p>
+    </header>
+
+    <!-- SEARCH + FILTER -->
+    <div class="search-container" id="searchContainer">
+        <input type="text" id="searchInput" class="search-input" placeholder="Cari judul atau penulis..." />
+        
+        <div class="filter-wrapper">
+            <div class="filter-dropdown" id="filterDropdown">
+                <div class="filter-select" id="filterSelect">
+                    <div class="filter-label">
+                        <span class="icon">▦</span>
+                        <span class="text" id="filterSelectedText">Semua Buku</span>
+                        <span class="filter-count" id="filterCount">20</span>
+                    </div>
+                    <span class="filter-arrow">▾</span>
+                </div>
+                <div class="filter-menu" id="filterMenu">
+                    <div class="filter-menu-item active" data-value="all">
+                        <span class="item-label">
+                            <span class="icon">⊞</span>
+                            <span class="name">Semua Buku</span>
+                        </span>
+                        <span class="item-count" id="countAll">20</span>
+                        <span class="check-mark">✓</span>
+                    </div>
+                    <div class="filter-menu-item" data-value="inggris">
+                        <span class="item-label">
+                            <span class="icon">🌐</span>
+                            <span class="name">Buku Bahasa Inggris</span>
+                        </span>
+                        <span class="item-count" id="countInggris">1</span>
+                        <span class="check-mark">✓</span>
+                    </div>
+                    <div class="filter-menu-item" data-value="novel">
+                        <span class="item-label">
+                            <span class="icon">📖</span>
+                            <span class="name">Novel</span>
+                        </span>
+                        <span class="item-count" id="countNovel">10</span>
+                        <span class="check-mark">✓</span>
+                    </div>
+                    <div class="filter-menu-divider"></div>
+                    <div class="filter-menu-item" data-value="lainnya">
+                        <span class="item-label">
+                            <span class="icon">⋯</span>
+                            <span class="name">Lainnya</span>
+                        </span>
+                        <span class="item-count" id="countLainnya">9</span>
+                        <span class="check-mark">✓</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CLOSE BUTTON -->
+    <div class="close-btn" id="closeBtn">✕</div>
+
+    <!-- RAK BUKU -->
+    <main class="library-container">
+        <div class="shelf-wrapper" id="shelfWrapper">
+            <div class="scroll-area" id="scrollArea"></div>
+            <div class="books-scroll" id="booksScroll">
+                <div class="books-container" id="booksContainer">
+                    <!-- BUKU DI-RENDER OLEH JAVASCRIPT DARI data.js -->
+                </div>
+            </div>
+            <div class="scroll-indicator" id="scrollIndicator">
+                <span class="scroll-dot active"></span>
+                <span class="scroll-dot"></span>
+                <span class="scroll-dot"></span>
+                <span class="scroll-dot"></span>
+                <span class="scroll-dot"></span>
+            </div>
+        </div>
+    </main>
+
+    <!-- SYNOPSIS PANEL -->
+    <div class="synopsis-panel" id="synopsisPanel">
+        <div class="synopsis-tag">Ringkasan Eksklusif</div>
+        <h2 class="synopsis-title" id="panelTitle">Judul Buku</h2>
+        <div class="synopsis-author" id="panelAuthor">Penulis</div>
+        <p class="synopsis-body" id="panelBody">Deskripsi naskah belum tersedia...</p>
+        <a href="#" id="panelLink" target="_blank" rel="noopener noreferrer" class="action-link">Buka Halaman Lengkap ↗</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="brand-footer">
+        <div class="footer-count" id="bookCount">20 buku dalam koleksi</div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+            <div class="footer-line"></div>
+            <p class="footer-text">&copy; 2026 BiluneShelf</p>
+        </div>
+        <div class="footer-text" style="opacity:0.3;">digital library</div>
+    </footer>
+
+    <!-- ======================================== -->
+    <!-- JAVASCRIPT - LOAD URUTAN PENTING!       -->
+    <!-- ======================================== -->
+    <script src="loader.js"></script>
+    <script src="data.js"></script>  
+    <script src="script.js"></script>
+</body>
+</html>
