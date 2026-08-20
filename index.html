@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>BiluneShelf — Digital Library Hub</title>
-        <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -42,7 +42,7 @@
                             <span class="icon">🌐</span>
                             <span class="name">Buku Bahasa Inggris</span>
                         </span>
-                        <span class="item-count" id="countInggris">1</span>
+                        <span class="item-count" id="countInggris">3</span>
                         <span class="check-mark">✓</span>
                     </div>
                     <div class="filter-menu-item" data-value="novel">
@@ -59,7 +59,7 @@
                             <span class="icon">⋯</span>
                             <span class="name">Lainnya</span>
                         </span>
-                        <span class="item-count" id="countLainnya">9</span>
+                        <span class="item-count" id="countLainnya">7</span>
                         <span class="check-mark">✓</span>
                     </div>
                 </div>
@@ -103,26 +103,27 @@
 
     <!-- FOOTER -->
     <footer class="brand-footer">
-        <div class="footer-count" id="bookCount">20 buku dalam koleksi</div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
-            <div class="footer-line"></div>
-            <p class="footer-text">&copy; 2026 BiluneShelf</p>
+        <div class="footer-content">
+            <div class="footer-top">
+                <span class="footer-count" id="bookCount">20 buku dalam koleksi</span>
+                <a href="https://sfile.twointomedia.com/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="footer-sfile-btn" 
+                   aria-label="Cari Buku Lain di Sfile">
+                   <span class="btn-icon">📚</span>
+                   <span class="btn-text">Sfile</span>
+                </a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p class="footer-text">&copy; 2026 BiluneShelf</p>
+                <span class="footer-badge">digital library</span>
+            </div>
         </div>
-        <div class="footer-text" style="opacity:0.3;">digital library</div>
     </footer>
-    <!-- FLOATING TOMBOL SFILE -->
-    <a href="https://sfile.twointomedia.com/" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="floating-sfile-btn" 
-       id="floatingSfileBtn"
-       aria-label="Cari Buku Lain di Sfile">
-       <span class="floating-icon">📚</span>
-       <span class="floating-text">Sfile</span>
-    </a>
-    <!-- ======================================== -->
-    <!-- JAVASCRIPT - LOAD URUTAN PENTING!       -->
-    <!-- ======================================== -->
+
+    <!-- JAVASCRIPT -->
     <script src="loader.js"></script>
     <script src="data.js"></script>  
     <script src="script.js"></script>
