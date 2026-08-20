@@ -15,12 +15,17 @@
             bookEl.dataset.url = book.url;
             bookEl.dataset.synopsis = book.synopsis;
             bookEl.dataset.author = book.author;
+            bookEl.dataset.cover = book.cover || '';
             
             const title = book.title.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
             const authorDisplay = book.author.split(' ')[0] || book.author;
             
+            const coverStyle = book.cover 
+                ? `background-image: url('${book.cover}'); background-size: cover; background-position: center;`
+                : '';
+            
             bookEl.innerHTML = `
-                <div class="book-front-cover">
+                <div class="book-front-cover" style="${coverStyle}">
                     <div class="book-spine-line"></div>
                     <div class="book-title">${title}</div>
                     <div class="book-author">${authorDisplay}</div>
@@ -44,6 +49,7 @@
     const panelAuthor = document.getElementById('panelAuthor');
     const panelBody = document.getElementById('panelBody');
     const panelLink = document.getElementById('panelLink');
+    const panelCover = document.getElementById('panelCover');
     const shelfWrapper = document.getElementById('shelfWrapper');
     const scrollIndicator = document.getElementById('scrollIndicator');
     const dots = scrollIndicator.querySelectorAll('.scroll-dot');
@@ -279,11 +285,19 @@
             const synopsis = book.dataset.synopsis || 'Sinopsis belum tersedia untuk naskah ini.';
             const author = book.dataset.author || 'Penulis Tidak Diketahui';
             const url = book.dataset.url || '#';
+            const cover = book.dataset.cover || '';
 
             panelTitle.textContent = title;
             panelAuthor.textContent = 'oleh ' + author;
             panelBody.textContent = synopsis;
             panelLink.href = url;
+
+            if (cover && panelCover) {
+                panelCover.src = cover;
+                panelCover.style.display = 'block';
+            } else if (panelCover) {
+                panelCover.style.display = 'none';
+            }
 
             if (url === '#' || url === '') {
                 panelLink.style.opacity = '0.5';
