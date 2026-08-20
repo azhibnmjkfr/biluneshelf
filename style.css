@@ -1358,6 +1358,90 @@ body {
     }
 }
 
+/* ======================================== */
+/* FLOATING TOMBOL SFILE                     */
+/* ======================================== */
+.floating-sfile-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px 12px 16px;
+    background: var(--panel-bg);
+    border: 1px solid var(--border-glass);
+    border-radius: 50px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+    z-index: 999;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+}
+
+.floating-sfile-btn:hover {
+    transform: translateY(-4px) scale(1.04);
+    border-color: var(--accent-gold);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 30px var(--accent-glow);
+}
+
+.floating-sfile-btn:active {
+    transform: scale(0.95);
+}
+
+.floating-sfile-btn .floating-icon {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.floating-sfile-btn .floating-text {
+    color: var(--text-secondary);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* Responsif Mobile */
+@media (max-width: 768px) {
+    .floating-sfile-btn {
+        bottom: 70px;
+        right: 14px;
+        padding: 10px 14px 10px 12px;
+        gap: 8px;
+    }
+
+    .floating-sfile-btn .floating-icon {
+        font-size: 16px;
+    }
+
+    .floating-sfile-btn .floating-text {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 420px) {
+    .floating-sfile-btn {
+        bottom: 60px;
+        right: 10px;
+        padding: 8px 12px 8px 10px;
+        gap: 6px;
+        border-radius: 40px;
+    }
+
+    .floating-sfile-btn .floating-icon {
+        font-size: 14px;
+    }
+
+    .floating-sfile-btn .floating-text {
+        font-size: 10px;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
