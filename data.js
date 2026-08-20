@@ -10,7 +10,8 @@ const bookData = [
         author: "Cambridge University Press",
         category: "inggris",
         synopsis: "Buku ajar bahasa Inggris untuk pelajar global. Materi disusun interaktif dan kontekstual untuk membangun keterampilan berkomunikasi secara alami dan percaya diri.",
-        url: "https://online.fliphtml5.com/xlrnq/fucc"
+        url: "https://online.fliphtml5.com/xlrnq/fucc",
+        cover: "assets/covers/cambridge-global-english.webp"
     },
     {
         id: 2,
@@ -18,7 +19,8 @@ const bookData = [
         author: "Jane Austen",
         category: "novel",
         synopsis: "Kisah abadi tentang cinta dan prasangka di era Regency. Elizabeth Bennet dan Mr. Darcy saling beradu argumentasi—dan perlahan menyadari bahwa cinta tak selalu tampak di pandangan pertama.",
-        url: "https://pubhtml5.com/oobw/gpfn/pride-and-prejudice/"
+        url: "https://pubhtml5.com/oobw/gpfn/pride-and-prejudice/",
+        cover: "assets/covers/pride-and-prejudice.webp"
     },
     {
         id: 3,
@@ -26,7 +28,8 @@ const bookData = [
         author: "George Orwell",
         category: "novel",
         synopsis: "Dunia di mana kebebasan adalah ilusi dan pikiran adalah kejahatan. Winston Smith mencoba melawan sistem yang mengawasi setiap hela napas—sebuah peringatan abadi tentang kekuasaan dan kebenaran.",
-        url: "https://online.fliphtml5.com/vbiia/afwc/"
+        url: "https://online.fliphtml5.com/vbiia/afwc/",
+        cover: "assets/covers/1984.webp"
     },
     {
         id: 4,
@@ -34,7 +37,8 @@ const bookData = [
         author: "Andrea Hirata",
         category: "novel",
         synopsis: "Sepuluh anak dari desa miskin di Belitung, bersekolah di SD Muhammadiyah yang nyaris roboh. Dengan semangat dan mimpi, mereka membuktikan bahwa kemiskinan tak pernah bisa membatasi cita-cita.",
-        url: "https://online.pubhtml5.com/rwiac/brai/"
+        url: "https://online.pubhtml5.com/rwiac/brai/",
+        cover: "assets/covers/laskar-pelangi.webp"
     },
     {
         id: 5,
@@ -42,7 +46,8 @@ const bookData = [
         author: "James Clear",
         category: "lainnya",
         synopsis: "Perubahan besar berawal dari kebiasaan kecil. Buku ini membongkar rahasia membentuk kebiasaan baik dan melepas kebiasaan buruk—tanpa motivasi besar, cukup dengan sistem yang tepat.",
-        url: "https://online.pubhtml5.com/mqswg/ofpy/"
+        url: "https://online.pubhtml5.com/mqswg/ofpy/",
+        cover: "assets/covers/atomic-habits.webp"
     },
     {
         id: 6,
@@ -50,7 +55,8 @@ const bookData = [
         author: "Paulo Coelho",
         category: "novel",
         synopsis: "Santiago, seorang gembala muda, menjual domba-dombanya demi mengejar mimpi yang muncul dalam tidurnya. Perjalanan ke Mesir membawanya menemukan harta karun sejati: keberanian untuk mendengarkan hati.",
-        url: "https://online.fliphtml5.com/rqpgn/dfef/"
+        url: "https://online.fliphtml5.com/rqpgn/dfef/",
+        cover: "assets/covers/the-alchemist.webp"
     },
     {
         id: 7,
@@ -58,7 +64,8 @@ const bookData = [
         author: "Henry Manampiring",
         category: "lainnya",
         synopsis: "Stoikisme untuk anak muda modern. Buku ini mengajak kita mengenali apa yang bisa dan tak bisa kita kendalikan—sebuah seni kuno yang membuat hidup lebih tenang di era yang serba cepat.",
-        url: "https://online.pubhtml5.com/nwtbm/jjhw/"
+        url: "https://online.pubhtml5.com/nwtbm/jjhw/",
+        cover: "assets/covers/filosofi-teras.webp"
     },
     {
         id: 8,
@@ -66,7 +73,8 @@ const bookData = [
         author: "Brian Khrisna",
         category: "novel",
         synopsis: "Pendakian Gunung Semeru bukan sekadar perjalanan fisik, tapi juga peta batin tentang persahabatan, kehilangan, dan makna di balik setiap langkah. Di ketinggian, segalanya menjadi lebih jernih.",
-        url: "https://online.pubhtml5.com/wdejy/yxex/"
+        url: "https://online.pubhtml5.com/wdejy/yxex/",
+        cover: "assets/covers/3726-mdpl.webp"
     },
     {
         id: 9,
@@ -74,7 +82,8 @@ const bookData = [
         author: "Mahfud Ikhwan",
         category: "novel",
         synopsis: "Kisah cinta yang terhalang keyakinan dan tradisi di sebuah desa. Dibungkus gaya bertutur yang unik, novel ini mengajak kita merenung tentang pilihan, pengorbanan, dan arti pulang.",
-        url: "https://fliphtml5.com/dyage/zsti/KAMBING_DAN_HUJAN/"
+        url: "https://fliphtml5.com/dyage/zsti/KAMBING_DAN_HUJAN/",
+        cover: "assets/covers/kambing-dan-hujan.webp"
     },
     {
         id: 10,
@@ -82,7 +91,8 @@ const bookData = [
         author: "Mark Manson",
         category: "lainnya",
         synopsis: "Berhenti peduli pada hal yang tidak penting, dan fokus pada apa yang benar-benar berarti. Buku ini membebaskan Anda dari tekanan untuk selalu sempurna—dengan cara yang blak-blakan dan menggelitik.",
-        url: "https://online.pubhtml5.com/ueqj/dyas/"
+        url: "https://online.pubhtml5.com/ueqj/dyas/",
+        cover: "assets/covers/seni-bodo-amat.webp"
     },
     {
         id: 11,
@@ -90,7 +100,8 @@ const bookData = [
         author: "Tere Liye",
         category: "novel",
         synopsis: "Raib, Seli, dan Ali menemukan lorong menuju dunia paralel. Petualangan yang memadukan sains, fantasi, dan misteri—mengajak pembaca melampaui batas logika dan mempercayai hal-hal yang tak terlihat.",
-        url: "https://online.pubhtml5.com/rwiac/bgqr/"
+        url: "https://online.pubhtml5.com/rwiac/bgqr/",
+        cover: "assets/covers/bumi.webp"
     },
     {
         id: 12,
@@ -98,7 +109,8 @@ const bookData = [
         author: "Brian Khrisna",
         category: "novel",
         synopsis: "Tentang kematian, kehidupan, dan hal-hal sederhana yang sering kita lupakan. Sebuah pengingat bahwa di balik setiap hari biasa, ada makna yang menunggu untuk ditemukan.",
-        url: "https://online.pubhtml5.com/wdejy/vukk/"
+        url: "https://online.pubhtml5.com/wdejy/vukk/",
+        cover: "assets/covers/seposi-mie-ayam.webp"
     },
     {
         id: 13,
@@ -106,7 +118,8 @@ const bookData = [
         author: "Betty Schrampfer Azar",
         category: "inggris",
         synopsis: "Buku tata bahasa Inggris paling sistematis untuk pelajar dari berbagai tingkat. Disertai latihan dan kunci jawaban—cocok untuk belajar mandiri maupun pendampingan kelas.",
-        url: "https://online.pubhtml5.com/taoe/mdoe/"
+        url: "https://online.pubhtml5.com/taoe/mdoe/",
+        cover: "assets/covers/fundamentals-english-grammar.webp"
     },
     {
         id: 14,
@@ -114,7 +127,8 @@ const bookData = [
         author: "DK Publishing",
         category: "inggris",
         synopsis: "Pendekatan visual dan praktis untuk belajar bahasa Inggris dari nol. Dilengkapi ilustrasi, audio, dan latihan interaktif—cocok bagi siapa pun yang ingin memulai perjalanan berbahasa Inggris.",
-        url: "https://online.pubhtml5.com/aywr/zscb/"
+        url: "https://online.pubhtml5.com/aywr/zscb/",
+        cover: "assets/covers/english-for-everyone.webp"
     },
     {
         id: 15,
@@ -122,7 +136,8 @@ const bookData = [
         author: "Dr. Aidh Al-Qarni",
         category: "lainnya",
         synopsis: "Buku tentang cara menghadapi kesedihan dengan iman dan kesabaran. Mengajarkan bahwa setelah kesulitan selalu ada kemudahan—sebuah pengingat lembut untuk hati yang sedang lelah.",
-        url: "https://online.pubhtml5.com/jnxyk/hktc/"
+        url: "https://online.pubhtml5.com/jnxyk/hktc/",
+        cover: "assets/covers/la-tahzan.webp"
     },
     {
         id: 16,
@@ -130,7 +145,8 @@ const bookData = [
         author: "Zulkifli Mohd. Yusoff",
         category: "lainnya",
         synopsis: "Mengisahkan perjalanan hidup Nabi Muhammad SAW—dari kelahiran hingga kenabian. Dengan narasi yang mendalam dan penuh teladan, buku ini menghadirkan sosok paling berpengaruh sepanjang sejarah.",
-        url: "https://online.fliphtml5.com/cwdun/yecr/"
+        url: "https://online.fliphtml5.com/cwdun/yecr/",
+        cover: "assets/covers/biografi-nabi.webp"
     },
     {
         id: 17,
@@ -138,7 +154,8 @@ const bookData = [
         author: "Arafat",
         category: "lainnya",
         synopsis: "Mengupas kebiasaan harian Rasulullah SAW dalam ibadah, makan, tidur, hingga berinteraksi dengan sesama. Sebuah panduan sederhana untuk menghidupkan sunnah dalam keseharian.",
-        url: "https://online.fliphtml5.com/haumn/aydj/"
+        url: "https://online.fliphtml5.com/haumn/aydj/",
+        cover: "assets/covers/rasulullah-habits.webp"
     },
     {
         id: 18,
@@ -146,7 +163,8 @@ const bookData = [
         author: "J.S. Khairen",
         category: "novel",
         synopsis: "Zenna dan Asrul, dua anak rantau dari Sumatera Barat, berjuang menjadi sarjana pertama di keluarganya. Novel ini adalah tentang cinta, pengorbanan, dan mimpi yang tak pernah padam.",
-        url: "https://fliphtml5.com/lzyxr/qqyh/Dompet_Ayah_Sepatu_Ibu_-_JS_Khairen/"
+        url: "https://fliphtml5.com/lzyxr/qqyh/Dompet_Ayah_Sepatu_Ibu_-_JS_Khairen/",
+        cover: "assets/covers/dompet-ayah-sepatu-ibu.webp"
     },
     {
         id: 19,
@@ -154,7 +172,8 @@ const bookData = [
         author: "Azhibnmjkfr",
         category: "novel",
         synopsis: "Dua hati yang perlahan menjadi asing di satu atap. Cinta yang dulu membakar hebat kini runtuh pelan tanpa suara, tanpa ada yang berkhianat—hanya jarak yang diam-diam merenggang.",
-        url: "https://azhibnmjkfr.github.io/biluneshelf/coming-soon.html"
+        url: "https://azhibnmjkfr.github.io/biluneshelf/coming-soon.html",
+        cover: "assets/covers/anagepesis.webp"
     },
     {
         id: 20,
@@ -162,6 +181,7 @@ const bookData = [
         author: "Azhibnmjkfr",
         category: "novel",
         synopsis: "Penantian di bulan Juli, di antara janji dan waktu yang terus berlalu. Sebuah kisah tentang seberapa jauh kita bisa melangkah sebelum godaan zaman mengikis semua yang pernah kita janjikan.",
-        url: "https://azhibnmjkfr.github.io/biluneshelf/coming-soon.html"
+        url: "https://azhibnmjkfr.github.io/biluneshelf/coming-soon.html",
+        cover: "assets/covers/jarak-juli.webp"
     }
 ];
