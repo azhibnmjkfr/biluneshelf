@@ -23,13 +23,13 @@ const bookData = [
         cover: "assets/covers/pride-and-prejudice.webp"
     },
     {
-        id: 3,
-        title: "1984",
-        author: "George Orwell",
-        category: "novel",
-        synopsis: "Dunia di mana kebebasan adalah ilusi dan pikiran adalah kejahatan. Winston Smith mencoba melawan sistem yang mengawasi setiap hela napas—sebuah peringatan abadi tentang kekuasaan dan kebenaran.",
-        url: "https://online.fliphtml5.com/vbiia/afwc/",
-        cover: "assets/covers/1984.webp"
+        id: 5,
+        title: "Atomic Habits (versi Indonesia)",
+        author: "James Clear",
+        category: "lainnya",
+        synopsis: "Perubahan besar berawal dari kebiasaan kecil. Buku ini membongkar rahasia membentuk kebiasaan baik dan melepas kebiasaan buruk—tanpa motivasi besar, cukup dengan sistem yang tepat.",
+        url: "https://online.pubhtml5.com/mqswg/ofpy/",
+        cover: "assets/covers/atomic-habits.webp"
     },
     {
         id: 4,
@@ -41,13 +41,13 @@ const bookData = [
         cover: "assets/covers/laskar-pelangi.webp"
     },
     {
-        id: 5,
-        title: "Atomic Habits (versi Indonesia)",
-        author: "James Clear",
-        category: "lainnya",
-        synopsis: "Perubahan besar berawal dari kebiasaan kecil. Buku ini membongkar rahasia membentuk kebiasaan baik dan melepas kebiasaan buruk—tanpa motivasi besar, cukup dengan sistem yang tepat.",
-        url: "https://online.pubhtml5.com/mqswg/ofpy/",
-        cover: "assets/covers/atomic-habits.webp"
+        id: 3,
+        title: "1984",
+        author: "George Orwell",
+        category: "novel",
+        synopsis: "Dunia di mana kebebasan adalah ilusi dan pikiran adalah kejahatan. Winston Smith mencoba melawan sistem yang mengawasi setiap hela napas—sebuah peringatan abadi tentang kekuasaan dan kebenaran.",
+        url: "https://online.fliphtml5.com/vbiia/afwc/",
+        cover: "assets/covers/1984.webp"
     },
     {
         id: 6,
