@@ -610,6 +610,21 @@ body {
     border-radius: 3px 3px 0 0;
 }
 
+/* Cover asli di rak - agar judul tetap terbaca */
+.book-front-cover[style*="background-image"] .book-title,
+.book-front-cover[style*="background-image"] .book-author {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+}
+
+.book-front-cover[style*="background-image"]::before {
+    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+}
+
+.book-front-cover[style*="background-image"]::after {
+    opacity: 0.15;
+}
+
+/* SYNOPSIS PANEL */
 .synopsis-panel {
     position: fixed;
     top: 42%;
@@ -643,6 +658,22 @@ body {
     color: var(--accent-gold);
     margin-bottom: 8px;
     font-weight: 600;
+}
+
+/* COVER DI PANEL SINopsis */
+.synopsis-cover-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.synopsis-cover {
+    width: 120px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    border: 1px solid var(--border-glass);
 }
 
 .synopsis-title {
@@ -972,6 +1003,11 @@ body {
         transform: translate(-50%, -50%) translateY(0);
     }
 
+    .synopsis-cover {
+        width: 80px;
+        height: 115px;
+    }
+
     .synopsis-title {
         font-size: 15px;
         margin-bottom: 4px;
@@ -1130,6 +1166,11 @@ body {
     .synopsis-panel {
         padding: 12px 14px;
         top: 60%;
+    }
+
+    .synopsis-cover {
+        width: 60px;
+        height: 85px;
     }
 
     .synopsis-title {
@@ -1309,6 +1350,11 @@ body {
 
     .synopsis-panel.visible {
         transform: translate(-50%, -50%) translateY(0);
+    }
+
+    .synopsis-cover {
+        width: 80px;
+        height: 115px;
     }
 }
 
