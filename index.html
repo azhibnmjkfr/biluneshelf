@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    
+    <title>BiluneShelf — Personal Digital Library</title>
+    <meta name="description" content="Koleksi buku digital pilihan untuk menemani hari-harimu." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="BiluneShelf — Personal Digital Library" />
+    <meta property="og:image" content="https://azhibnmjkfr.github.io/biluneshelf/assets/og-image.jpg" />
+</head>
+<body>
+
+    <!-- NOSCRIPT: Pesan jika JavaScript dinonaktifkan -->
+    <noscript>
+        <div style="position: fixed; inset: 0; background: #05070a; color: white; display: flex; align-items: center; justify-content: center; z-index: 99999; font-family: sans-serif; text-align: center; padding: 20px;">
+            <div>
+                <h2>JavaScript Dinonaktifkan</h2>
+                <p style="color: #8b9bb4; margin-top: 10px;">Silakan aktifkan JavaScript di browser Anda untuk membuka BiluneShelf.</p>
+            </div>
+        </div>
+    </noscript>
+
+    <!-- BRAND HEADER -->
+    <header class="brand-header">
+        <h1 class="brand-title">BiluneShelf</h1>
+        <p class="brand-subtitle">Personal Digital Library</p>
+    </header>
+
+    <!-- SEARCH + FILTER -->
+    <div class="controls-container" id="searchContainer">
+        <div class="search-box">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="searchInput" class="search-input" placeholder="Cari judul atau penulis..." />
+        </div>
+        
+        <div class="filter-wrapper">
+            <div class="filter-dropdown" id="filterDropdown">
+                <div class="filter-select" id="filterSelect">
+                    <span class="text" id="filterSelectedText">Semua Koleksi</span>
+                    <span class="filter-arrow">▾</span>
+                </div>
+                <div class="filter-menu" id="filterMenu">
+                    <div class="filter-menu-item active" data-value="all">Semua Koleksi</div>
+                    <div class="filter-menu-item" data-value="inggris">Bahasa Inggris</div>
+                    <div class="filter-menu-item" data-value="novel">Novel & Fiksi</div>
+                    <div class="filter-menu-item" data-value="lainnya">Non-Fiksi & Lainnya</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIEW TOGGLE (GALERI / KATALOG) -->
+    <div class="view-toggle-container">
+        <button class="view-btn active" id="viewCoverflow" title="Mode Galeri 3D">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+            Galeri 3D
+        </button>
+        <button class="view-btn" id="viewGrid" title="Mode Katalog Grid">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            Katalog Grid
+        </button>
+    </div>
+
+    <!-- LIBRARY AREA -->
+    <main class="library-container">
+        <!-- COVERFLOW VIEW -->
+        <div class="coverflow-wrapper" id="coverflowWrapper">
+            <div class="coverflow-stage" id="coverflowStage">
+                <!-- Cover Buku dirender JS -->
+            </div>
+            
+            <!-- INFO BUKU DI LUAR KORSEL -->
+            <div class="coverflow-info" id="coverflowInfo">
+                <h2 class="cf-info-title" id="cfInfoTitle">Judul Buku</h2>
+                <p class="cf-info-author" id="cfInfoAuthor">Penulis</p>
+                <span class="cf-info-hint">Klik untuk melihat detail</span>
+            </div>
+        </div>
+
+        <!-- GRID VIEW -->
+        <div class="grid-wrapper" id="gridWrapper">
+            <div class="grid-container" id="gridContainer">
+                <!-- Buku dirender JS -->
+            </div>
+        </div>
+    </main>
+
+    <!-- DETAIL PANEL (GLASSMORPHISM) -->
+    <div class="detail-panel" id="detailPanel">
+        <div class="detail-glass"></div>
+        <div class="detail-content">
+            <button class="close-panel-btn" id="closePanelBtn">✕</button>
+            <div class="detail-top">
+                <div class="detail-cover-wrap">
+                    <img id="panelCover" src="" alt="Cover" class="detail-cover" />
+                </div>
+                <div class="detail-meta">
+                    <span class="detail-tag" id="panelCategory">Kategori</span>
+                    <h2 class="detail-title" id="panelTitle">Judul Buku</h2>
+                    <p class="detail-author" id="panelAuthor">Penulis</p>
+                </div>
+            </div>
+            <div class="detail-divider"></div>
+            <p class="detail-synopsis" id="panelBody">Sinopsis...</p>
+            <a href="#" id="panelLink" class="detail-action-btn" target="_blank" rel="noopener noreferrer">
+                Mulai Membaca
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="brand-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span id="bookCount">20 buku dalam koleksi</span>
+            </div>
+            <div class="footer-right">
+                <a href="https://sfile.twointomedia.com/" target="_blank" rel="noopener noreferrer" class="footer-sfile-btn">
+                   <span>📚 Sfile</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="loader.js"></script>
+    <script src="data.js"></script>  
+    <script src="script.js"></script>
+</body>
+</html>
